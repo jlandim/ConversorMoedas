@@ -8,8 +8,9 @@ import java.net.http.HttpResponse;
 
 public class ExchangeRate {
 
+    private String key = "90531406d25c1ea1ff77263b";
     public String search(String currencyCode) throws IOException, InterruptedException {
-        var uri = "https://v6.exchangerate-api.com/v6/90531406d25c1ea1ff77263b/latest/"  + currencyCode;
+        var uri = "https://v6.exchangerate-api.com/v6/"+ this.key +"/latest/"  + currencyCode;
         URI url = URI.create(uri);
 
         HttpClient client = HttpClient.newHttpClient();
@@ -18,7 +19,6 @@ public class ExchangeRate {
                 .build();
 
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        //TODO manipular exceptions
 
         return response.body();
     }

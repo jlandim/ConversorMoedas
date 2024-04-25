@@ -1,11 +1,12 @@
 package br.com.conversormoedas.records;
 
-public record ConversionRates(String ARS,
-                              String BOB,
-                              String BRL,
-                              String  CLP,
-                              String  COP,
-                              String USD
+public record ConversionRates(Double ARS,
+                              Double EUR,
+                              Double BRL,
+                              Double  CLP,
+                              Double  COP,
+                              Double USD,
+                              Double JPY
 
 ) {
 }
