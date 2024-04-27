@@ -1,2 +1,2 @@
 # ConversorMoedas
-Aplicação em JAVA utilizando API ExchangeRate para converção de moedas
+Aplicação em JAVA utilizando API ExchangeRate para conversão de moedas
